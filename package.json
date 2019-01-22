@@ -1,0 +1,22 @@
+{
+  "name": "eslint-plugin-es-jacket",
+  "version": "1.0.0",
+  "description": "Restrictions for ES6 and beyond.",
+  "keywords": [],
+  "author": "Alexei Solodovnicov",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
