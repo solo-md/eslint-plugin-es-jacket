@@ -2,21 +2,21 @@
 
 Code restrictions for ES6 and beyond
 
-## Installation
+## Installation (global)
 
 You'll first need to install [ESLint](http://eslint.org):
 
 ```
-$ npm i eslint --save-dev
+$ npm i -g eslint
 ```
 
 Next, install `eslint-plugin-es-jacket`:
 
 ```
-$ npm install eslint-plugin-es-jacket --save-dev
+$ npm i -g eslint-plugin-es-jacket
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-es-jacket` globally.
+**Note:** If you installed the plugin locally (without using the `-g` flag) then your global ESLint will not have access to it.
 
 ## Usage
 
@@ -36,14 +36,20 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "es-jacket/rule-name": 2
+        "es-jacket/no-class-declaration": [ "error" ],
+        "es-jacket/no-export-named-declaration": [ "error" ],
+        "es-jacket/no-import-declaration": [ "error" ],
+        "es-jacket/no-module-keyword": [ "error" ],
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* no-class-declaration
+* no-export-named-declaration
+* no-import-declaration
+* no-module-keyword
 
 
 
